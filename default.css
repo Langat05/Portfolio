@@ -59,7 +59,7 @@ ul{
 
 .greeting-wrapper{
     display:grid;
-    border:2px dashed lightcoral;
+    
     min-height: 10em;
     justify-content:center;
     align-content: center;
@@ -69,10 +69,10 @@ ul{
 .inro-wrapper{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
-
-    -webkit-box-shadow: 13px 7px 31px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 13px 7px 31px 0px rgba(0,0,0,0.75);
-    box-shadow: 13px 7px 31px 0px rgba(0,0,0,0.75);
+    border-radius:5px 5px 0 0;
+    -webkit-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
 
     display: grid;
 
@@ -85,20 +85,62 @@ ul{
 }
 
 .nav-wrapper{
+    border-radius:5px 5px 0 0;
     grid-area:nav-wrapper;
-    border: 1px dashed lightcoral;
+    border-bottom:1px solid var(--borderColor);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--mainColor)
+}
+
+#navigation{
+    margin:0;
+    padding:10px;
+}
+
+#navigation li{
+    display:inline-block;
+    margin-right:5px;
+    margin-left:5px;
 }
 
 .left-column{
     grid-area: left-column;
-    border: 1px dashed lightcoral;
+  
 }
 
 .right-column{
     grid-area:right-column;
-    border: 1px dashed lightcoral;
+   
 }
 
+.dots-wrapper{
+    display:flex;
+    padding:10px;
+}
+
+.browser-dot{
+    background-color:black;
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    margin:5px;
+}
+
+#dot-1{
+    background-color:red;
+}
+#dot-2{
+    background-color:yellow;
+}
+
+#dot-3{
+    background-color:green;
+}
 
 @media screen and (max-width:1200px){
     .main-container{   
