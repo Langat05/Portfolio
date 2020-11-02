@@ -6,6 +6,8 @@
 
     --mainText:black;
     --secondaryText:#4b5156;
+
+    --themeDotBorder:#24292e;
 }
 
 html,body{
@@ -76,7 +78,6 @@ ul{
 
     display: grid;
 
-    grid-template-rows: 3em 30em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
@@ -107,12 +108,69 @@ ul{
 
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
   
 }
 
 .right-column{
     grid-area:right-column;
+    padding-top:50px;
    
+}
+
+#profile_pic{
+    display:block;
+    margin:0 auto;
+    height:200px;
+    widows: 200px;
+    object-fit:cover;
+    border:2px solid var(--borderColor);
+
+
+}
+
+.theme-dot{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color:black;
+    margin:5px;
+    border:2px solid var(--themeDotBorder);
+
+    -webkit-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 8px -2px rgba(0,0,0,0.75);
+
+    cursor:pointer;
+}
+
+#theme-option-wrapper{
+    display:flex;
+    justify-content:center;
+}
+
+.theme-dot:hover{
+    border-width:5px;
+}
+
+#light-mode{
+    background-color:#fff;
+}
+#blue-mode{
+    background-color:blue;
+}
+#green-mode{
+    background-color:green;
+}
+#purple-mode{
+    background-color:purple;
+}
+
+#settings-mode{
+    font-size:12px;
+    font-style:italic;
+    text-align:center;
+
 }
 
 .dots-wrapper{
